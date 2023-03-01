@@ -8,7 +8,7 @@ app = Flask(__name__)
 #    return 'hi'
 
 
-@app.route('/', methods=['GET'])
+@app.route('/get_location_names', methods=['GET'])
 def get_location_name():
     response = jsonify({
         'location':util.get_location_names()
